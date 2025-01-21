@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -493,15 +492,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1194729587871583563, guid: fa57ee578c609a349bd7258dcfd57f84, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0206544
+      value: 1.0206543
       objectReference: {fileID: 0}
     - target: {fileID: 1194729587871583563, guid: fa57ee578c609a349bd7258dcfd57f84, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0206544
+      value: 1.0206543
       objectReference: {fileID: 0}
     - target: {fileID: 1194729587871583563, guid: fa57ee578c609a349bd7258dcfd57f84, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.0206544
+      value: 1.0206543
       objectReference: {fileID: 0}
     - target: {fileID: 3140318986572625206, guid: fa57ee578c609a349bd7258dcfd57f84, type: 3}
       propertyPath: ExternalForcesModule.influenceList.Array.data[0]
@@ -954,12 +953,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1518,6 +1517,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 475447946}
   _scoreDenominator: 10
+  eventSystem: {fileID: 0}
+  playerInput:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 16795fb9-bebc-4883-8d18-7cb4ee3e5a6d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!4 &1094055942
 Transform:
   m_ObjectHideFlags: 0
@@ -2913,6 +2922,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 361649846}
     m_Modifications:
+    - target: {fileID: 3880528781281377961, guid: 545fd59accb02454aa4e8e4e1386dc91, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8bad124567556d143b4e38dc1f90e112, type: 2}
+    - target: {fileID: 3880528781281377961, guid: 545fd59accb02454aa4e8e4e1386dc91, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4924244456480536311, guid: 8bad124567556d143b4e38dc1f90e112, type: 2}
+    - target: {fileID: 3880528781281377961, guid: 545fd59accb02454aa4e8e4e1386dc91, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4839369382425949130, guid: 545fd59accb02454aa4e8e4e1386dc91, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
